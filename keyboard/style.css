@@ -22,7 +22,6 @@ button{
     box-shadow: 5px 5px 10px #474343, -5px -5px 10px #858383;
     font-size: 20px;
     margin-left: 5px;
-    outline: none;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 20%;
 }
@@ -82,4 +81,10 @@ h1 {
     max-width: 100%;
     overflow-x: auto;
     overscroll-behavior-x: contain;
+}
+
+button:focus-visible,
+.keyboard-viewport:focus-visible {
+    outline: 3px solid #79caff;
+    outline-offset: 3px;
 }
