@@ -26,7 +26,8 @@ button{
     border-radius: 20%;
 }
 
-button:active{
+button:active,
+button.pressed{
     box-shadow: 1px 1px 2px #858383, -1px -1px 2px #0a0a0a;
 
 }
