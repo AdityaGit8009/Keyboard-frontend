@@ -2,10 +2,12 @@ body{
     background-color: rgb(3, 3, 3);
 }
 .container{
-    margin: 160px 0 0 200px;
+    width: max-content;
+    padding: 1rem;
 }
 .row{
-    width: 100%;
+    display: flex;
+    align-items: center;
     height: 60px;
 }
 .one,.two,.three,.four,.five{
@@ -60,4 +62,24 @@ border-radius: 10px;
 .space{
     width: 400px;
     border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    color: #ededed;
+    font-family: system-ui, sans-serif;
+}
+main {
+    max-width: 65rem;
+    margin: clamp(1rem, 8vh, 6rem) auto;
+    padding: 0 1rem;
+}
+h1 {
+    margin: 0 0 .75rem;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+}
+.keyboard-viewport {
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
 }
