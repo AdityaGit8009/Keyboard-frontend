@@ -15,3 +15,9 @@ keyboard.addEventListener("focusout", (event) => {
   if (!keyboard.contains(event.relatedTarget)) clearPressedKeys();
 });
 window.addEventListener("blur", clearPressedKeys);
+
+const output = document.getElementById("last-key");
+keyboard.addEventListener("click", (event) => {
+  const key = event.target.closest("button[data-code]");
+  if (key) output.textContent = key.getAttribute("aria-label") || key.textContent.trim();
+});
